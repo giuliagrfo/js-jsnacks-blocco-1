@@ -6,3 +6,12 @@ Il software stampa prima la parola più corta, poi la parola più lunga.*/
 const firstWord = prompt('Scegli una parola');
 const secondWord = prompt('Scegli una seconda parola');
 
+// Il software stampa prima la parola più corta, poi la parola più lunga
+
+if (firstWord.length > secondWord.length) {
+    console.log(firstWord);
+} else if (secondWord.length > firstWord.length) {
+    console.log(secondWord);
+} else {
+    console.log('Pari');
+}
