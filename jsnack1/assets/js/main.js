@@ -5,9 +5,14 @@ Il software stampa il maggiore. */
 const firstNumber = prompt('Scegli un numero');
 const secondNumber = prompt('Scegli un altro numero');
 
+const element = document.querySelector('p');
 
 if (firstNumber > secondNumber) {
-    console.log(firstNumber);
+    // console.log(firstNumber);
+    element.innerHTML = firstNumber;
+
 } else {
-    console.log(secondNumber);
+    // console.log(secondNumber);
+    element.innerHTML = secondNumber;
+
 }
