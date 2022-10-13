@@ -26,13 +26,13 @@ Il programma stampa la somma di tutti i numeri inseriti.  */
 /* Il software deve chiedere per 10 volte all’utente di inserire un numero.
 Il programma stampa la somma di tutti i numeri inseriti. */
 
+let sum = 0;
 let i = 0;
-let sum = 1;
 while (i < 10) {
     const num = Number(prompt('Inserisci un numero'));
 
     i++;
 
-    sum += num[i];
+    sum += num;
     console.log(sum);
 }
